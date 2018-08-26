@@ -1,6 +1,6 @@
 
 ##### 前言
-源于项目重构，需要剔除无用的资源文件和减少第三方库的使用。在检查工程文件的时候发现**[UITextView-Placeholder](https://github.com/devxoul/UITextView-Placeholder)**有点多余( 注:**[YYText](https://github.com/ibireme/YYText)**已经存在).就想着用YYTextView来实现编辑签名。
+源于项目重构，需要剔除无用的资源文件和减少第三方库的使用。在检查工程文件的时候发现[UITextView-Placeholder](https://github.com/devxoul/UITextView-Placeholder)有点多余( 注:[YYText](https://github.com/ibireme/YYText)已经存在).就想着用YYTextView来实现编辑签名。
 ######  YYTextView
 > 创建视图
 ```
