@@ -15,3 +15,14 @@
  UIKit    +[UIWindow _synchronizeDrawingWithPreCommitHandler:] + 68
  UIKit    -[UIInputViewAnimationStyle launchAnimation:afterStarted:completion:forHost:fromCurrentPosition:]
  ```
+> 使用`DZNEmptyDataSet`时,`tableView `或者`collectionView `中的`DZNEmptyDataSetView`位置发生偏移
+```
+- (void)emptyDataSetDidAppear:(UIScrollView *)scrollView{
+CGRect frame   = scrollView.frame;
+frame.origin.y = 0;
+UIView *view = objc_getAssociatedObject(scrollView,emptyDataSetView);
+if (view) {
+   view.frame  = frame;
+ }
+}
+```
