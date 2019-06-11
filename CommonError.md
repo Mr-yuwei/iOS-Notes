@@ -26,3 +26,20 @@ if (view) {
  }
 }
 ```
+
+> CollectionView 数据量不足无法滚动问题
+
+`@property(nonatomic) BOOL alwaysBounceVertical;` <br>
+`@property(nonatomic) BOOL alwaysBounceHorizontal`
+
+选择上面的属性,设置为YES,当数据量少的时候也可滚动
+
+
+>   输入框空禁止点击键盘  `enablesReturnKeyAutomatically`
+
+```
+textField.enablesReturnKeyAutomatically = YES;
+```
+ 输入框未输入任何文字键盘禁止输入,只需将`enablesReturnKeyAutomatically`设置为YES,默认是NO，需要注意的是微信检索功能也是利用这个属性做的。
+
+
